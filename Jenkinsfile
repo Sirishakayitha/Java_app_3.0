@@ -78,8 +78,8 @@ pipeline{
           steps{
             script{
                 jfrogPush()
-                }
-            }
+                  }
+               }
         }
         stage('Docker Image Build'){
          when { expression {  params.action == 'create' } }
